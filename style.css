@@ -1,0 +1,28 @@
+body {
+    background-color: #FFA3A5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+    background-color: white;
+    padding: 5%;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+fieldset {
+    margin-top: 10px;
+}
+
+.submit-button {
+    background-color: #3ABEFF;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.camera-button {
+    background-color: #26FFE6;
+    border-radius: 8px;
+}

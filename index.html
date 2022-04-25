@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>C20G Parking Buddy</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body onload="checkCookie()">
+    <script src="https://cdn.jsdelivr.net/npm/@ericblade/quagga2/dist/quagga.min.js"></script>
+	<script src="index.js"></script>
+    <header>
+        <h1>C20G Parking Buddy</h1>
+    </header>
+    <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+    <form class="content" method="post" action="https://script.google.com/macros/s/AKfycbwSQ1atfUsdHhk0jbN0fw8jDSDXV62U8ocBGrsHsdGTMgxvSaog6EqTNT4cweUBwflq/exec" target="dummyframe" onsubmit="submitted()">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" value="" required>
+        <br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" value="" required>
+        <br>
+        <fieldset> 
+            <legend>Ticket No.</legend>
+            <div id="viewport"></div>
+            <input type="number" id="ticketNumber" name="ticketNumber" value="" required>
+            <p><b>~ or ~</b></p>
+            <button class="camera-button" type="button" onclick="buttonFunction()">Scan Ticket</button>
+        </fieldset>
+        <br>
+        <label for="ticketType">Ticket Type:</label>
+        <select name="ticketType" id="ticketType" required>
+            <option value="ALL_DAY">All Day</option>
+            <option value="PART_DAY">Partial Day</option>
+        </select>
+        <br>
+        <input class="submit-button" type="submit" value="Submit">
+    </form>
+  </body>
+  <footer>
+      <p>made by Westley Thompson for C20G Hackathon Spring 2022</p>
+  </footer>
+</html>
