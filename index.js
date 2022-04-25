@@ -19,12 +19,12 @@ function buttonFunction() {
               console.log(err);
               return
           }
-          console.log("Initialization finished. Ready to start");
           Quagga.start();
       });
 }
 
 Quagga.onDetected(result => {
+    alert(result);
     console.log(result);
 })
 
@@ -67,6 +67,5 @@ function checkCookie() {
     let lName = getCookie('lName');
     if (lName != '') {
         document.getElementById('lastName').value = lName;
-    }
-    
+    }   
 }
