@@ -11,7 +11,7 @@ function buttonFunction() {
           },
         },
         decoder : {
-          readers : ["code_128_reader"]
+          readers : ["code_128_reader", "upc_reader", "upc_e_reader"]
         },
         locate : true
       }, function(err) {
