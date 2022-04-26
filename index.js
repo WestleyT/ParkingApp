@@ -38,7 +38,7 @@ function buttonFunction() {
 }
 
 Quagga.onDetected(result => {
-    alert(result);
+    alert(result.codeResult.code);
     console.log(result);
 })
 
