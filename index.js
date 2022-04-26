@@ -41,6 +41,7 @@ Quagga.onDetected(result => {
     var code = result.codeResult.code;
     code = code.substring(code.length - 6);
     document.getElementById("ticketNumber").value = code
+    Quagga.stop();
 })
 
 function submitted() {
@@ -49,6 +50,7 @@ function submitted() {
     var lastName = document.getElementById('lastName').value;
     setCookie('fName', firstName, 365);
     setCookie('lName', lastName, 365);
+    document.forms['parking-form'].reset();
 }
 
 function setCookie(cname, cvalue, exdays) {
