@@ -26,7 +26,8 @@ function buttonFunction() {
         locator : {
             halfSample : true,
             patchSize : "medium"
-        }
+        },
+        src : null
       }, function(err) {
           if (err) {
               console.log(err);
