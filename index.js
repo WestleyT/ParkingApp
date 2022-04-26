@@ -5,10 +5,14 @@ function buttonFunction() {
           type : "LiveStream",
           target: document.querySelector('#viewport'),
           constraints: {
-            width: 200, //these numbers determine the viewport size
-            height: 200,
             facingMode: "environment"
           },
+          area : {
+              top : "0%",
+              right : "0%",
+              left : "0%",
+              bottom : "0%"
+          }
         },
         decoder : {
           readers : ["code_128_reader", "upc_reader", "upc_e_reader", "ean_reader"],
@@ -17,7 +21,7 @@ function buttonFunction() {
         locate : true,
         locator : {
             halfSample : true,
-            patchSize : "large"
+            patchSize : "medium"
         }
       }, function(err) {
           if (err) {
