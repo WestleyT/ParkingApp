@@ -18,7 +18,9 @@ function buttonFunction() {
         },
         decoder : {
           readers : ["code_128_reader", "upc_reader", "upc_e_reader", "ean_reader"],
-          drawBoundingBox : true
+          debug : {
+              drawBoundingBox : true
+          }
         },
         locate : true,
         locator : {
