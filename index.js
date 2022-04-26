@@ -17,7 +17,7 @@ function buttonFunction() {
           }
         },
         decoder : {
-          readers : ["code_128_reader", "upc_reader", "upc_e_reader", "ean_reader"],
+          readers : ["i2of5_reader", "upc_reader", "upc_e_reader"],
           debug : {
               drawBoundingBox : true
           }
@@ -52,6 +52,7 @@ function submitted() {
     setCookie('fName', firstName, 365);
     setCookie('lName', lastName, 365);
     document.forms['parking-form'].reset();
+    $("video").remove();
 }
 
 function setCookie(cname, cvalue, exdays) {
