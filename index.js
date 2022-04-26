@@ -5,7 +5,9 @@ function buttonFunction() {
           type : "LiveStream",
           target: document.querySelector('#viewport'),
           constraints: {
-            facingMode: "environment"
+            facingMode: "environment",
+            width : 300,
+            height : 200
           },
           area : {
               top : "0%",
