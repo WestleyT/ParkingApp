@@ -38,8 +38,9 @@ function buttonFunction() {
 }
 
 Quagga.onDetected(result => {
-    alert(result.codeResult.code);
-    console.log(result);
+    var code = result.codeResult.code;
+    code = code.substring(code.length - 6);
+    document.getElementById("ticketNumber").value = code
 })
 
 function submitted() {
