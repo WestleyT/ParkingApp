@@ -11,12 +11,13 @@ function buttonFunction() {
           },
         },
         decoder : {
-          readers : ["code_128_reader", "upc_reader", "upc_e_reader"]
+          readers : ["code_128_reader", "upc_reader", "upc_e_reader", "ean_reader"],
+          drawBoundingBox : true
         },
         locate : true,
         locator : {
             halfSample : true,
-            patchSize : "medium"
+            patchSize : "large"
         }
       }, function(err) {
           if (err) {
