@@ -30,7 +30,6 @@ function buttonFunction() {
         src : null
       }, function(err) {
           if (err) {
-              console.log(err);
               return
           }
           Quagga.start();
@@ -53,6 +52,7 @@ function submitted() {
     setCookie('lName', lastName, 365);
     document.forms['parking-form'].reset();
     $("video").remove();
+    $("canvas").remove();
 }
 
 function setCookie(cname, cvalue, exdays) {
