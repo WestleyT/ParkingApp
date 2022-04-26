@@ -38,6 +38,7 @@ function buttonFunction() {
 }
 
 Quagga.onDetected(result => {
+    $("#viewport").addClass("success_outline");
     var code = result.codeResult.code;
     code = code.substring(code.length - 6);
     document.getElementById("ticketNumber").value = code
