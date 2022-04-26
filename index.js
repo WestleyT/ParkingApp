@@ -13,7 +13,11 @@ function buttonFunction() {
         decoder : {
           readers : ["code_128_reader", "upc_reader", "upc_e_reader"]
         },
-        locate : true
+        locate : true,
+        locator : {
+            halfSample : true,
+            patchSize : "medium"
+        }
       }, function(err) {
           if (err) {
               console.log(err);
