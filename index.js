@@ -17,7 +17,7 @@ function buttonFunction() {
           }
         },
         decoder : {
-          readers : ["code_39_reader"],//["i2of5_reader", "upc_reader", "upc_e_reader"],
+          readers : ["code_93_reader"],//["i2of5_reader", "upc_reader", "upc_e_reader"],
           debug : {
               drawBoundingBox : true
           }
