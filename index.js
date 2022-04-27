@@ -38,6 +38,7 @@ function buttonFunction() {
 
 Quagga.onDetected(result => {
     $("video").addClass("success-outline");
+    alert(result.codeResult.code);
     var code = result.codeResult.code;
     code = code.substring(code.length - 6);
     document.getElementById("ticketNumber").value = code
