@@ -50,7 +50,7 @@ function submitted() {
     var lastName = document.getElementById('lastName').value;
     setCookie('fName', firstName, 365);
     setCookie('lName', lastName, 365);
-    document.forms['parking-form'].reset();
+    //document.forms['parking-form'].reset();
     $("video").remove();
     $("canvas").remove();
 }
