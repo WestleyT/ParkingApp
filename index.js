@@ -17,9 +17,9 @@ function buttonFunction() {
           }
         },
         decoder : {
-          readers : ["i2of5_reader"],//["i2of5_reader", "upc_reader", "upc_e_reader"],
+          readers : ["i2of5_reader", "upc_reader", "upc_e_reader"],
           debug : {
-              drawBoundingBox : true
+              drawBoundingBox : false
           }
         },
         locate : true,
@@ -38,7 +38,6 @@ function buttonFunction() {
 
 Quagga.onDetected(result => {
     $("video").addClass("success-outline");
-    //alert(result.codeResult.code);
     var code = result.codeResult.code;
     code = code.substring(code.length - 6);
     document.getElementById("ticketNumber").value = code

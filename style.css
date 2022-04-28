@@ -30,3 +30,7 @@ fieldset {
 .success-outline {
     outline : 5px solid green;
 }
+
+.footer-text {
+    font-size: x-small;
+}
